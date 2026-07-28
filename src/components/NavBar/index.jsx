@@ -2,6 +2,8 @@ import { useContext, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FavoritesContext } from '../../context/FavoritesContext';
 import { CartWidget } from '../CartWidget';
+import favicon from '../../assets/favicon.png';
+import heartIcon from '../../assets/fav-icon.png';
 import './index.css';
 
 export const NavBar = () => {
@@ -22,7 +24,7 @@ export const NavBar = () => {
       {/* PRIMERA LÍNEA */}
       <div className="navbar-top">
         <Link to="/" className="navbar-brand-link">
-          <img src="/src/assets/favicon.png" alt="Logo" className="navbar-logo-img" />
+          <img src={favicon} alt="Logo" className="navbar-logo-img" />
           <h2 className="navbar-logo">Viridian Forest</h2>
         </Link>
 
@@ -37,7 +39,7 @@ export const NavBar = () => {
 
         <div className="navbar-top-right">
           <Link to="/favorites" className="icon-btn" title="Favoritos" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-            <img src="/src/assets/fav-icon.png" alt="Favoritos" className="fav-icon" />
+            <img src={heartIcon} alt="Favoritos" className="fav-icon" />
           </Link>
           <CartWidget />
         </div>

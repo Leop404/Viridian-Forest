@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
+import cartIMG from '../../assets/cart.png';
 import './index.css';
 
 export const CartWidget = () => {
@@ -9,7 +10,7 @@ export const CartWidget = () => {
   return (
     <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>
       <div className="cart-widget">
-        <img src="/src/assets/cart.png" alt="Carrito" className="cart-icon" />
+        <img src={cartIMG} alt="Carrito" className="cart-icon" />
         <span className="cart-badge">{totalQuantity}</span>
       </div>
     </Link>
