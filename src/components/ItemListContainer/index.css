@@ -1,0 +1,19 @@
+.item-list-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.greeting-title {
+  color: #1b4332;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2d6a4f;
+  margin-top: 3rem;
+}

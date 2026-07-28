@@ -1,0 +1,69 @@
+.item-count-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.count-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f8f5;
+  border: 1px solid #b7e4c7;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.count-btn {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.count-btn:hover:not(:disabled) {
+  background-color: #1b4332;
+}
+
+.count-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.count-number {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1b4332;
+}
+
+.add-to-cart-btn {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover:not(:disabled) {
+  background-color: #1b4332;
+}
+
+.add-to-cart-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

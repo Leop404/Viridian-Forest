@@ -1,0 +1,26 @@
+.cart-widget {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.cart-badge {
+  background-color: #976767;
+  color: #f8f9f3;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}

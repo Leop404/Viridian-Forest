@@ -1,0 +1,112 @@
+.navbar-container {
+  background-color: #f8f9f3;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.navbar-logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.navbar-top {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  border-bottom: 1px solid rgba(1, 85, 6, 0.15);
+}
+
+.navbar-logo {
+  font-size: 2.5rem;
+  font-family: 'WindSong', sans-serif;
+  font-weight: bold;
+  color: #4a786d;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar-logo:hover {
+  color: #305048;
+}
+
+.navbar-search {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-search input {
+  width: 450px;
+  max-width: 100%;
+  padding: 0.75rem 1.2rem;
+  border: 1px solid rgba(1, 85, 6, 0.3);
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  color: #1b4332;
+  background-color: #ffffff;
+}
+
+.navbar-search input::placeholder {
+  color: #a0d8bc;
+  font-style: italic;
+}
+
+.navbar-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.fav-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.fav-icon:hover {
+  transform: scale(1.1);
+}
+
+/* SEGUNDA LINEA */
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 0.9rem 0;
+}
+
+.navbar-categories {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-categories a {
+  text-decoration: none;
+  color: #4a786d;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.navbar-categories a:hover {
+  color: #d8f3dc;
+}
