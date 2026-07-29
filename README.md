@@ -1,16 +1,46 @@
-# React + Vite
+# 🌿 Viridian Forest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-commerce de plantas desarrollado con **React + Vite** y **Firebase Firestore**.
 
-Currently, two official plugins are available:
+🌐 **Demo:** [https://leop404.github.io/Viridian-Forest/](https://leop404.github.io/Viridian-Forest/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Catálogo de productos cargado desde Firestore
+- Filtrado por categorías (Large, Indoor, Outdoor, Bonsai, Suculentas)
+- Vista de detalle de cada producto
+- Contador de unidades con validación de stock (`ItemCount`)
+- Carrito de compras con Context API
+- Favoritos
+- Búsqueda de productos
+- Checkout con generación de órdenes en Firestore
+- Single Page Application con React Router
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías
+
+- React 19
+- Vite
+- React Router DOM
+- Firebase / Firestore
+- Context API
+- CSS Modules / CSS puro
+
+---
+
+## 🔥 Firebase
+
+Colección products: listado de plantas (nombre, precio, stock, categoría, imagen, descripción).
+Colección orders: órdenes generadas al finalizar la compra (datos del comprador, productos, total y fecha).
+
+---
+
+## 👤 Autor
+
+Leomar Padron - Leop404
+Proyecto final de curso – React ~ Coderhouse 2026
+
+---
