@@ -22,7 +22,11 @@ export const Item = ({ id, name, price, img, category }) => {
         />
       </button>
 
-      <img src={img} alt={name} className="product-img" />
+      <img
+        src={`${import.meta.env.BASE_URL}${img}`}
+        alt={name}
+        className="product-img"
+      />
       <div className="product-info">
         <h3 className="product-title">{name}</h3>
         <p className="product-price">${price}</p>

@@ -10,14 +10,18 @@ export const ItemDetail = ({ id, name, price, img, category, description, stock 
 
   const handleOnAdd = (quantity) => {
     setQuantityAdded(quantity);
-    
+
     const item = { id, name, price, img };
     addItem(item, quantity);
   };
 
   return (
     <article className="item-detail-card">
-      <img src={img} alt={name} className="item-detail-img" />
+      <img
+        src={`${import.meta.env.BASE_URL}${img}`}
+        alt={name}
+        className="item-detail-img"
+      />
       <div className="item-detail-info">
         <span className="item-detail-category">{category}</span>
         <h2 className="item-detail-title">{name}</h2>
