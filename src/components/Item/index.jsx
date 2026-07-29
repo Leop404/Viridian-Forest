@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FavoritesContext } from '../../context/FavoritesContext';
 import heartFilled from '../../assets/fav-green.png';
 import heartOutline from '../../assets/fav-red.png';
+import { getImageUrl } from '../../utils/getImageUrl';
 import './index.css';
 
 export const Item = ({ id, name, price, img, category }) => {
@@ -22,11 +23,7 @@ export const Item = ({ id, name, price, img, category }) => {
         />
       </button>
 
-      <img
-        src={`${import.meta.env.BASE_URL}${img}`}
-        alt={name}
-        className="product-img"
-      />
+      <img src={getImageUrl(img)} alt={name} className="product-img" />
       <div className="product-info">
         <h3 className="product-title">{name}</h3>
         <p className="product-price">${price}</p>

@@ -1,6 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
+import { getImageUrl } from '../../utils/getImageUrl';
 import './index.css';
 
 export const Cart = () => {
@@ -33,7 +34,7 @@ export const Cart = () => {
 
       {cart.map((product) => (
         <div key={product.id} className="cart-item">
-          <img src={product.img} alt={product.name} className="cart-item-img" />
+          <img src={getImageUrl(product.img)} alt={product.name} className="cart-item-img" />
           <div className="cart-item-details">
             <h3 className="cart-item-title">{product.name}</h3>
             <p className="cart-item-price">
@@ -41,7 +42,7 @@ export const Cart = () => {
             </p>
           </div>
           <button className="remove-btn" onClick={() => removeItem(product.id)}>
-             Eliminar
+            Eliminar
           </button>
         </div>
       ))}

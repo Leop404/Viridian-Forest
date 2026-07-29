@@ -2,6 +2,7 @@ import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 import { ItemCount } from '../ItemCount';
+import { getImageUrl } from '../../utils/getImageUrl';
 import './index.css';
 
 export const ItemDetail = ({ id, name, price, img, category, description, stock }) => {
@@ -17,11 +18,8 @@ export const ItemDetail = ({ id, name, price, img, category, description, stock 
 
   return (
     <article className="item-detail-card">
-      <img
-        src={`${import.meta.env.BASE_URL}${img}`}
-        alt={name}
-        className="item-detail-img"
-      />
+      
+      <img src={getImageUrl(img)} alt={name} className="item-detail-img" />
       <div className="item-detail-info">
         <span className="item-detail-category">{category}</span>
         <h2 className="item-detail-title">{name}</h2>
