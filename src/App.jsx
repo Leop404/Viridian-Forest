@@ -12,28 +12,28 @@ import { Favorites } from './components/Favorites';
 import { ScrollToTopButton } from './components/ScrollToTop';
 
 function App() {
-  return (
-    <CartProvider>
-      <FavoritesProvider>
-        <div>
-          <NavBar />
-          
-          <Routes>
-            <Route path="/" element={<><Banner /><ItemListContainer greeting="Nuestra Colección Destacada" /></>} />
-            <Route path="/category/:categoryId" element={<ItemListContainer greeting="Nuestra Colección" />} />
-            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/favorites" element={<Favorites />} />
-            <Route path="*" element={<h2 style={{ textAlign: 'center', marginTop: '3rem' }}>404 - Página no encontrada 🌿</h2>} />
-            <Route path="/search" element={<SearchContainer />} />
-          </Routes>
+    return (
+        <CartProvider>
+            <FavoritesProvider>
+                <div>
+                    <NavBar />
 
-          <ScrollToTopButton />
-        </div>
-      </FavoritesProvider>
-    </CartProvider>
-  );
+                    <Routes>
+                        <Route path="/" element={<><Banner /><ItemListContainer greeting="Nuestra Colección Destacada" /></>} />
+                        <Route path="/category/:categoryId" element={<ItemListContainer greeting="Nuestra Colección" />} />
+                        <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+                        <Route path="/cart" element={<Cart />} />
+                        <Route path="/checkout" element={<Checkout />} />
+                        <Route path="/favorites" element={<Favorites />} />
+                        <Route path="/search" element={<SearchContainer />} />
+                        <Route path="*" element={<h2 style={{ textAlign: 'center', marginTop: '3rem' }}>404 - Página no encontrada 🌿</h2>} />
+                    </Routes>
+
+                    <ScrollToTopButton />
+                </div>
+            </FavoritesProvider>
+        </CartProvider>
+    );
 }
 
 export default App;
